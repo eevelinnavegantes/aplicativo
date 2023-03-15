@@ -22,6 +22,7 @@
         }
         .d1
         {
+           
             width: 100%;
             height: 100vh;
             display: flex;
@@ -31,19 +32,30 @@
             align-content: center;
             align-items: center;  
         }
-        .d2
+        .cadastro
         {
+
             width: 30%;
             height: 97vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-content: center;
+            align-items: center; 
+        }
+        .bordacad
+        {
+            width: 80%;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             justify-items: center;
             align-content: center;
             align-items: center; 
         }
-        .d3
+        .dPessoais
         {
+            background-color: rgb(255, 255, 255);
             width: 30%;
             height: 97vh;
             display: flex;
@@ -53,9 +65,9 @@
             align-content: center;
             align-items: center; 
         }
-        .d4
+        .dProfissionais
         {
-            
+            background-color: rgb(255, 255, 255);
             width: 30%;
             height: 97vh;
             display: flex;
@@ -67,21 +79,64 @@
         }
         .logo
         {
-            top: 50px;
+            top: 40px;
+        }
+        .letrascadastro
+        {
+            font-size: 40px;
+        }
+        .fieldset1
+        {
+            width: 250px;
+            height:100px;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 20px;
+            margin: 10px;
+            
+        }
+        .botao
+        {
+           width: 150px;
+           height: 50px;
+           background-color: rgb(53, 120, 141);
+           color: white;
+           display: flex;
+           border-radius: 20px;
+           justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
         }
     </style>
     
 </head>
 <body>
     <div class="d1">
-      <div class="d2">
-        <img class="logo" src="cupcake.png"  width="1000px" > 
-      </div>
-      <div class="d3"></div>
-      <div class="d4">
-        <div class="sla"></div>
-        <div class="sl2"></div>
-      <div class="d5"></div>
+      <div class="cadastro">
+        <img class="logo" src="novalogo.png"  width="170px" >
+        <br> <br> 
+        <b class="letrascadastro">FAÇA SEU LOGIN:</b>
+        <br> <br>
+        <div class="bordacad">
+            <fieldset class="fieldset1">
+                 <legend><b>LOGIN</b> </legend>
+                 <input type="text">
+            </fieldset>
+            <fieldset class="fieldset1">
+                <legend> <b>SENHA</b></legend>
+                <input type="text">
+            </fieldset>
+        </div>
+        <div class="botao">
+           <b>CADASTRE-SE</b>
+        </div>
+    </div>
+      <div class="dPessoais"></div>
+      <div class="dProfissionais"></div>
     </div>
 </body>
 </html>
