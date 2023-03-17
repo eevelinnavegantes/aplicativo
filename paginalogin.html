@@ -5,7 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINALOGIN</title>
+    <title>PAGINA LOGIN</title>
     <style>
-
-  
+        body
+        {
+            font-family: "Audiowide", sans-serif;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            background-image: url(fundo4.jpg);
+        }
+        .d1
+        {
+            width: 100%;
+            height: 100vh;
+            background: rgb(234, 225, 225, 0.7);
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .d2
+        {
+            width: 40%;
+            height: 90vh;
+            display: flex;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .d3
+        {
+            width: 75%;
+            height: 10vh;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .letraslogin
+        {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+        .fieldset1
+        {
+            width: 300px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 20px;
+            flex-direction: column;
+            border-style: solid;
+            border-color: black;
+        }
+        .escrita
+        {
+            margin-top: 35px;
+        }
+        .botao
+        {
+            width: 150px;
+            height: 50px;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center; 
+            border-radius: 5px;
+            font-size: 20px;
+            border-color: rgb(34, 127, 143);
+            background: rgb(47, 117, 117,0.7);
+            cursor: pointer;
+        }
+        .botao:hover
+        {
+            background-color: rgb(255, 255, 255);
+        }
+        .naocadastrou
+        {
+            font-size: 14px;
+        }
+        
+        
+</style>
+</head>
+<body>
+    <div class="d1">
+        <div class="d2">
+            <img class="logo" src="novalogo.png" width="180px">
+            <div class="d3">
+                <img class="escrita" src="backery.png" width=" 600px" >
+            </div>
+            <br>
+             <b class="letraslogin">FAÇA SEU LOGIN:</b>
+           <br> 
+            <fieldset class="fieldset1">
+                <legend><b>LOGIN</b> </legend>
+                <input type="text">
+           </fieldset>
+           <br>
+           <fieldset class="fieldset1">
+               <legend> <b>SENHA</b></legend>
+               <input type="text">
+           </fieldset>
+            <br>
+           <button class="botao"> <b> ENTRAR </b></button>
+           <br>
+            <b class="naocadastrou"> NÃO POSSUI CADASTRO? </b>
+        </div>
+        
+    </div>
+</body>
+</html>
